@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<link href="jquery-ui.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Menu -->
+<h2 class="demoHeaders">Menu</h2>
+<ul style="width:100px;" id="menu">
+	<li>Item 1</li>
+	<li>Item 2</li>
+	<li>Item 3
+		<ul>
+			<li>Item 3-1</li>
+			<li>Item 3-2</li>
+			<li>Item 3-3</li>
+			<li>Item 3-4</li>
+			<li>Item 3-5</li>
+		</ul>
+	</li>
+	<li>Item 4</li>
+	<li>Item 5</li>
+</ul>
+
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+
+$( "#menu" ).menu();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="styl.css" />
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+		<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+		<script src="jquery-1.11.1.js"></script>
+		<script src="jquery-ui-1.11.1/jquery-ui.min.js"></script>
+		<script src="jquery-ui-1.11.1/jquery-ui.js"></script>
+	</head>
+	<body>
+		<div id="przyciski">
+			<ol>
+			    <li><a>RYSUJ</a>
+			      <ul>
+			        <li><a id="znacznik">Znacznik</a></li>
+			        <li><a id="kolo">Koło</a></li>
+			      </ul>
+			    </li>
+			    
+			    <li><a>WYCIECZKA</a>
+			      <ul>
+			        <li><a id="poprz">Poprzedni punkt</a></li>
+			        <li><a id="nast">Następny punkt</a></li>
+			      </ul>
+			    </li>
+			    
+			    <li><a>POMIARY</a>
+			      <ul>
+			      	<li><a id="wspolrzedne">Współrzędne</a></li>
+			        <li><a id="dlugosc">Długość</a></li>
+			        <li><a id="powierzchnia">Powierzchnia</a></li>
+			      </ul>
+			    </li>
+			    
+		  	</ol>
+		</div>
+		<div id="left">
+			<h3 id="Sek1" class="menu">OpenStreetMap</h3>
+            <div>
+            	<form action="...">	<input type="checkbox" name="nazwa" value="wartość" id="ch1"/>OpenStreetMap</form>
+            </div>
+            <h3 id="Sek2" class="menu">Mapa topograficzna</h3>
+            <div>
+                <form action="...">	<input type="checkbox" name="nazwa" value="wartość" id="ch2" />Raster</form>
+            </div>
+            <h3 id="Sek3" class="menu">Mapy ZGKiKM Wrocław</h3>
+            <div>
+	            <form><input type="checkbox" name="nazwa" value="wartość" id="ch3"  />Mapa podstawowa</form>
+	            <form><input type="checkbox" name="nazwa" value="wartość" id="ch4"  />MPZP</form>
+	            <form><input type="checkbox" name="nazwa" value="wartość" id="ch5"  />Ortofotomapa</form>
+			</div>
+         </div>
+		<div id="map"></div>
+		<script src="skrypt.js"></script>
+	</body>
+</html>
